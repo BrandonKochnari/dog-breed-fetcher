@@ -52,8 +52,6 @@ public class DogApiBreedFetcher implements BreedFetcher {
 
         } catch (IOException e) {
             throw new BreedNotFoundException("Eror fetching data from API" + e.getMessage());
-        } catch (BreedNotFoundException e) {
-            throw new RuntimeException(e);
         }
     }
 }
